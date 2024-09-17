@@ -49,7 +49,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/currencyservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/currencyservice:v0.10.1
         ports:
         - name: grpc
           containerPort: 7000
@@ -158,7 +158,7 @@ metadata:
 #               - ALL
 #           privileged: false
 #           readOnlyRootFilesystem: true
-#         image: stm-mirror.jetru.lab/microservices-demo/loadgenerator:v0.10.1
+#         image: r.shturval.tech/microservices-demo/loadgenerator:v0.10.1
 #         env:
 #         - name: FRONTEND_ADDR
 #           value: "frontend:80"
@@ -208,7 +208,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/productcatalogservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/productcatalogservice:v0.10.1
         ports:
         - containerPort: 3550
         env:
@@ -280,7 +280,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: stm-mirror.jetru.lab/microservices-demo/checkoutservice:v0.10.1
+          image: r.shturval.tech/microservices-demo/checkoutservice:v0.10.1
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -362,7 +362,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/shippingservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/shippingservice:v0.10.1
         ports:
         - containerPort: 50051
         env:
@@ -436,7 +436,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/cartservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/cartservice:v0.10.1
         ports:
         - containerPort: 7070
         env:
@@ -579,7 +579,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/emailservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/emailservice:v0.10.1
         ports:
         - containerPort: 8080
         env:
@@ -654,7 +654,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/paymentservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/paymentservice:v0.10.1
         ports:
         - containerPort: 50051
         env:
@@ -728,7 +728,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: stm-mirror.jetru.lab/microservices-demo/frontend:v0.10.1
+          image: r.shturval.tech/microservices-demo/frontend:v0.10.1
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -840,7 +840,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/recommendationservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/recommendationservice:v0.10.1
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -917,7 +917,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stm-mirror.jetru.lab/microservices-demo/adservice:v0.10.1
+        image: r.shturval.tech/microservices-demo/adservice:v0.10.1
         ports:
         - containerPort: 9555
         env:
