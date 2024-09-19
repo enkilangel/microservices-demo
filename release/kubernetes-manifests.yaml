@@ -35,6 +35,7 @@ spec:
     spec:
       serviceAccountName: currencyservice
       terminationGracePeriodSeconds: 5
+      replicas: 3
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -194,6 +195,7 @@ spec:
     spec:
       serviceAccountName: productcatalogservice
       terminationGracePeriodSeconds: 5
+      replicas: 3
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -265,6 +267,7 @@ spec:
       labels:
         app: checkoutservice
     spec:
+      replicas: 3
       serviceAccountName: checkoutservice
       securityContext:
         fsGroup: 1000
@@ -347,6 +350,7 @@ spec:
       labels:
         app: shippingservice
     spec:
+      replicas: 3
       serviceAccountName: shippingservice
       securityContext:
         fsGroup: 1000
@@ -420,6 +424,7 @@ spec:
       labels:
         app: cartservice
     spec:
+      replicas: 3
       serviceAccountName: cartservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -494,6 +499,7 @@ spec:
       labels:
         app: redis-cart
     spec:
+      replicas: 3
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -508,7 +514,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: redis:alpine
+        image: r.shturval.tech/redis:alpine
         ports:
         - containerPort: 6379
         readinessProbe:
@@ -563,6 +569,7 @@ spec:
       labels:
         app: emailservice
     spec:
+      replicas: 3
       serviceAccountName: emailservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -638,6 +645,7 @@ spec:
       labels:
         app: paymentservice
     spec:
+      replicas: 3
       serviceAccountName: paymentservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -713,6 +721,7 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
+      replicas: 3
       serviceAccountName: frontend
       securityContext:
         fsGroup: 1000
@@ -824,6 +833,7 @@ spec:
       labels:
         app: recommendationservice
     spec:
+      replicas: 3
       serviceAccountName: recommendationservice
       terminationGracePeriodSeconds: 5
       securityContext:
@@ -901,6 +911,7 @@ spec:
       labels:
         app: adservice
     spec:
+      replicas: 3
       serviceAccountName: adservice
       terminationGracePeriodSeconds: 5
       securityContext:
